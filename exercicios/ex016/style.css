@@ -1,0 +1,40 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    /*height: 100%*/
+}
+body{
+    /*Cria um gradiente na página completa do site*/
+    background-image: linear-gradient(to right, #026E81, #00ABBD);
+}
+main{
+    /*Muda a cor de fundo do BOX*/
+    background-color: white;
+    /*Muda a borda do BOX*/
+    border-radius: 5px;
+    /*Cria sombra na borda do BOX*/
+    box-shadow: 5px 5px 10px #4d7075;
+    /*Tamanho do BOX*/
+    width: 500px;
+    /*Acochoamento do BOX, largura*/
+    padding: 30px;
+    /*Margem de dento do BOX*/
+    margin: auto;
+}
+h1{
+    /*Cor do testo do cabeçalho*/
+    color: #00ABBD;
+    /*Alinhamento do cabeçalho*/
+    text-align: center;
+}
+h2{
+    /*Cor do Título 1, 2 e 3*/
+    color: #0099DD;
+}
+p{
+    /*Alinhamento do texto do paragrafo*/
+    text-align: justify;
+    /*Cor do texto do paragrafo*/
+    color: #657d8d;
+}
