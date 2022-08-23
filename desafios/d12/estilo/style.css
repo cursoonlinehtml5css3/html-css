@@ -1,63 +1,64 @@
 @charset "UTF-8";
 
+/*Margem e padding geral do site*/
 * {
     margin: 0px;
     padding: 0px;
 }
-
+/*Corpo do site*/
 html, body {
     min-height: 100vh;
     background-color: darkgray;
 
 }
-
+/*Cabeçalho*/
 header {
     background-color:  black;
     color: white;
     text-align: center;
 }
-
+/*Cabeçalho, deixa a pimeira letra maior*/
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
 }
-
+/*Delimitar cabeçalho*/
 header > p {
     padding-bottom: 50px;
 }
-
+/*Links do cabeçalho e do roda pé*/
 header a, footer a {
     color: white;
     text-decoration: none;
     font-weight: bolder;
 }
-
+/*Deixa o link com sublinhado ao passar o mouse*/
 header a:hover, footer a:hover {
     text-decoration: underline;
 }
-
+/*Configurações das seções geral*/
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
 }
-
+/*Seções com texto em branco*/
 section.normal {
     background-color:  white;
     color: black;
 }
-
+/*Seções que tem imagens*/
 section.imagem {
-    background-color: rgb(107, 107, 107);
+    background-color: rgba(107, 107, 107, 0.753);
     color: white;
 }
-
+/*Configuração das secões de texto */
 section.imagem > p {
     width: 400px;
-    background-color: rgb(68, 67, 67);
+    background-color: rgba(68, 67, 67, 0.575);
 }
-
+/*Roda pé*/
 footer {
     background-color:  black;
     color: white;
