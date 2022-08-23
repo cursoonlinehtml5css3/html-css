@@ -1,5 +1,15 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Sriracha&display=swap');
+
+:root {
+    --font1: Verdana, Geneva, Tahoma, sans-serif;
+    --font2: 'Passion One', cursive;
+    --font3: 'Sriracha', cursive;
+}
+
 /*Margem e padding geral do site*/
 * {
     margin: 0px;
@@ -9,7 +19,7 @@
 html, body {
     min-height: 100vh;
     background-color: darkgray;
-
+    font-family: var(--font1);
 }
 /*Cabeçalho*/
 header {
@@ -17,10 +27,12 @@ header {
     color: white;
     text-align: center;
 }
-/*Cabeçalho, deixa a pimeira letra maior*/
+/*Cabeçalho, deixa a pimeira letra maior, 10vw = 10% da letra ao redimencionar a janela do navegador ou em dispositivos de tela diferentes*/
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps;
+    font-family: var(--font2);
+    font-size: 10vw;
 }
 /*Delimitar cabeçalho*/
 header > p {
@@ -36,12 +48,14 @@ header a, footer a {
 header a:hover, footer a:hover {
     text-decoration: underline;
 }
-/*Configurações das seções geral*/
+/*Configurações das seções gerais*/
 section {
     padding-top: 10vh;
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 30px;
+    font-family: var(--font3);
+    font-size: 3vw;
 }
 /*Seções com texto em branco*/
 section.normal {
@@ -50,13 +64,14 @@ section.normal {
 }
 /*Seções que tem imagens*/
 section.imagem {
-    background-color: rgba(107, 107, 107, 0.753);
+    background-color: rgba(107, 107, 107, 0.534);
     color: white;
 }
 /*Configuração das secões de texto */
 section.imagem > p {
-    width: 400px;
-    background-color: rgba(68, 67, 67, 0.575);
+    display: inline-block;
+    padding: 5px;
+    background-color: rgba(68, 67, 67, 0.5);
 }
 /*Roda pé*/
 footer {
