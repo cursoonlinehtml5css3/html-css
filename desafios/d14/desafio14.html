@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio 14</title>
+
+    <style>
+        h1 {
+
+        }
+        /**/
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+        /**/
+        table {
+            font-family: Arial, Helvetica, sans-serif;
+            border-collapse: collapse;
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
+        }
+        /**/
+        th, td {
+            font-family: Arial, Helvetica, sans-serif;
+            border: 1px solid rgb(0, 0, 0);
+            padding: 10px;
+        }
+        tfoot {
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Desafio de Tabelas</h1>
+    <table>
+        <caption>
+            Notas Escolares
+        </caption>
+
+        <thead>
+            <th>Áres</th>
+            <th>Disciplinas</th>
+            <th colspan="2">Notas</th>
+            <th colspan="2">Média</th>
+        </thead>
+
+        <tfoot>
+            <tr>
+                <th colspan="4">Média de Humanas</th>
+            </tr>
+        </tfoot>
+
+        <tbody>
+            <tr>
+                <th rowspan="5">Exatas</th>
+                <tr>
+                    <th>Matemática</th>
+                </tr>
+
+                <tr>
+                    <th>Fisíca</th>
+                </tr>
+
+                <tr>                    
+                    <th>Quimica</th></tr>
+                <tr>
+
+                <tr>
+                    <td>Biologis</td>
+                </tr>
+
+                <td colspan="4">Média de Exatas</td>
+                <td>0.0</td>
+
+                <tr>
+                    <th colspan="4">Humanas</th>
+                    <td>0.0</td>
+                </tr>
+        </tbody>
+    </table>
+</body>
+</html>
