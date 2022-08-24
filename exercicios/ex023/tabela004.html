@@ -15,21 +15,13 @@
         table {
             font-family: Arial, Helvetica, sans-serif;
             border-collapse: collapse;
-            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.37);
+            box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.219);
         }
         /**/
-        th {
+        th, td {
             font-family: Arial, Helvetica, sans-serif;
-            width: 100px;
             border: 1px solid rgb(0, 0, 0);
-            padding: 30px;
-        }
-        /*Filmes*/
-        td {
-            font-family: Arial, Helvetica, sans-serif;
-            width: 200px;
-            border: 1px solid black;
-            text-align: left;
+            padding: 10px;
         }
     </style>
 </head>
@@ -37,57 +29,61 @@
     <h1>Tabelas de Filmes Favoritos</h1>
     
     <table>
-        <tr>
-            <th>Grupo</th>
-                <th>Nomes</th>
-                <th colspan="4">Filmes</th>
-        </tr>
+        <caption>
+            Filmes Favoritos
+        </caption>
 
-        <tr>
-            <th rowspan="4">Mulheres</th>
-        </tr>
+        <thead>
+            <th>Grupos</th>
+            <th>Nomes</th>
+            <th colspan="3">Filmes</th>
+        </thead>
 
-        <tr>
-            <td>Ana Beatriz</td>
-            <td></td>
-            <td>Rambo</td>
-            <td>Vingadores</td>
-        </tr>
-        <tr>
-            <td>Beatriz de Souza</td>
-            <td></td>
-            <td>Inception</td>
-            <td>Batman</td>
-        </tr>
-        <tr>
-            <td>Cláudia Ráia</td>
-            <td></td>
-            <td>Matrix</td>
-            <td>Big Hiro</td>
-        </tr>
+        <tbody>
+            <tr>
+                <th rowspan="4">Mulheres</th>
+                <tr>
+                    <td class="nomes">Ana Maria Santos</td>
+                    <td>Alien</td>
+                    <td>Rambo</td>
+                    <td>Vingadores</td>
+                </tr>
+                <tr>
+                    <td class="nome">Beatriz de Souza</td>
+                    <td>Hulk</td>
+                    <td>Inception</td>
+                    <td>Batman</td>
+                </tr>
+                <tr>
+                    <td class="nome">Cláudia Ráia</td>
+                    <td>Oblivion</td>
+                    <td>Matrix</td>
+                    <td>Big Hiro</td>
+                </tr>
+            </tr>
 
-        <tr>
-            <th rowspan="4">Homens</th>
-        </tr>
-
-        <tr>
-            <td>Bruno Mendonça</td>
-            <td>Intocáveis</td>
-            <td>Amnésia</td>
-            <td>Gladiador</td>
-        </tr>
-        <tr>
-            <td>Miro Andrade</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
-        <tr>
-            <td>Marcos João</td>
-            <td></td>
-            <td></td>
-            <td></td>
-        </tr>
+            <tr>
+                <th rowspan="4">Homens</th>
+            </tr>
+            <tr>
+                <td class="nome">Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>Amnésia</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td class="nome">Miro Andrade</td>
+                <td>Wall-e</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td class="nome">Marcos João</td>
+                <td>Star Wars 5</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+        </tbody>
     </table>
 </body>
 </html>
