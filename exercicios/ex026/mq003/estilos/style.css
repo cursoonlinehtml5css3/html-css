@@ -32,7 +32,6 @@ h1 {
 @media screen and (orientation: landscape) {
     body {
         background-image: url(../imagens/cev-landscape.jpg);
+       }
     }
 }
-}
-
